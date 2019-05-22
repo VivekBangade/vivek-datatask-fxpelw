@@ -24,8 +24,6 @@ this.mail=mail1;
 }
 
   dataTransfer(){
-
-    return this.age;
     return this.num;
     return this.mail;
     return this.name;
