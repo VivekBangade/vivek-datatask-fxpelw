@@ -24,9 +24,14 @@ this.mail=mail1;
 }
 
   dataTransfer(){
-     return this.name;
-    return this.age
-    return this.num;
-    return this.mail;
+    var data="{"+"\"name\":"+"\""+this.name+"\""+","+"\"age\":"+"\""+this.age+"\""+","+"\"num\":"+"\""+this.num+"\""+","+"\"mail\":"+"\""+this.mail+"\""+"}";
+    //data=JSON.stringify(data);
+    //console.log("data is"+data)
+    
+    // return data;
+    //  return this.name;
+    // return this.age
+    // return this.num;
+    // return this.mail;
   }
 }

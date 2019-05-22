@@ -14,10 +14,18 @@ mynumber;
 mymail;
 
   constructor(private service:SenddataService, private _router:Router) { 
-    this.myName=service.dataTransfer();
-    this.myage=service.dataTransfer();
-    this.mynumber=service.dataTransfer();
-    this.mymail=service.dataTransfer();
+  var dataobj=service.dataTransfer();
+   dataobj=JSON.parse(dataobj);
+     this.myName=dataobj.name;
+     this.myage=dataobj.age;
+     this.mynumber=dataobj.mail;
+    this.mymail=dataobj.mail;
+    // this.mynumber=
+    // this.mymail=
+    // this.myName=service.dataTransfer();
+    // this.myage=service.dataTransfer();
+    // this.mynumber=service.dataTransfer();
+    // this.mymail=service.dataTransfer();
   }
 gotohome(){
    this._router.navigate(['/home']);
