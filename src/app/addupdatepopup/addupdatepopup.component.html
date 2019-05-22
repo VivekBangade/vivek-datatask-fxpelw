@@ -1,0 +1,10 @@
+<h1>Kindly Fill the below details</h1>
+<label>Name:</label><input #myname type="text"/><br><br>
+<label>Age  :</label><input #myage type="text"/><br> <br>
+<label>Mobile:</label><input #mynumber type="text"/><br><br>
+<label>Email:</label><input #myemail type="text"/><br><br>
+<br><br>
+<div>
+  <input type="button" value="Submit" (click)="TransferData(myname.value,myage.value, mynumber.value, myemail.value)"/> 
+  <input type="button" value="cancel"/>
+</div>

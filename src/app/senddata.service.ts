@@ -1,0 +1,33 @@
+import { Injectable,EventEmitter } from '@angular/core';
+
+// export interface myData {
+//    name:string;
+//    age:number;
+//    mail:string;
+//    num:number;
+// }
+
+@Injectable()
+export class SenddataService {
+  name:string;
+  age:number;
+   num:number;
+   mail:string;
+// sharingData: myData={ age, num, mail, name };
+  constructor() { }
+
+recievedata(name1,age1,num1,mail1){
+this.name=name1;
+this.age=age1;
+this.num=num1;
+this.mail=mail1;
+}
+
+  dataTransfer(){
+
+    return this.age;
+    return this.num;
+    return this.mail;
+    return this.name;
+  }
+}
